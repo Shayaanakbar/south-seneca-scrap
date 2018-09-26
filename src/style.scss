@@ -1,3 +1,86 @@
+* {
+    font-family: "Arial", sans-serif;
+}
+
 body {
-    background-color: red;
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.cta {
+    height: 719px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        rgba(50, 50, 50, 0.45), 
+        rgba(50, 50, 50, 0.45)
+      ), url("https://cdn6.dissolve.com/p/D929_20_730/D929_20_730_1200.jpg");
+    color: white;
+
+    .cta-content {
+        text-align: center;
+
+        h2 {
+            font-size: 3.5rem;
+            margin: 0 0 20px 0;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+            margin: 0 0 20px 0;
+        }
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-content {
+        h2 {
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .about-content__sections {
+            .container {
+                > div {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 25px 0;
+                    align-items: center;
+    
+                    > * {
+                        display: inline-block;
+                    }
+    
+                    > div {
+                        margin: 0;
+                        padding: 0 20px;
+    
+                        > p {
+                            margin: 0;
+                        }
+                    }
+    
+                    &:nth-child(even) {
+                        > div {
+                            order: 0
+                        }
+    
+                        > img {
+                            order: 1
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
